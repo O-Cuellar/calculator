@@ -1,5 +1,9 @@
+html{
+  height: 100%;
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(180deg, blue 0%, black 100%);
 }
