@@ -5,16 +5,16 @@ const CalculatorButtons = () => {
   return (
     <>
       <div>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button>%</button>
+        <button>C</button>
+        <button>CE</button>
+        <button>{"<<"}</button>
       </div>
       <div>
         <button>7</button>
         <button>8</button>
         <button>9</button>
-        <button>X</button>
+        <button>*</button>
       </div>
       <div>
         <button>4</button>

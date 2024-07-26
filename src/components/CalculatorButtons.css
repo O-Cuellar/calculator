@@ -1,8 +1,10 @@
 button {
+  color: white;
+  background-color: rgb(49, 37, 37);
   font-size: 50px;
   height: 80px;
   width: 80px;
   border-radius: 10px;
   border: 2px solid black;
-  font-weight: bold;
+  cursor: pointer;
 }
