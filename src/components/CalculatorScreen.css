@@ -1,0 +1,24 @@
+.scroll-container {
+  width: 313px; /* Largura visível */
+  overflow-x: auto; /* Permite rolagem horizontal */
+  overflow-y: hidden; /* Impede rolagem vertical */
+  white-space: nowrap; /* Impede quebra de linha */
+  border: 8px solid black; /* Adiciona borda ao contêiner */
+  border-radius: 2px; /* Adiciona borda arredondada */
+  height: 80px; /* Altura do contêiner */
+  display: flex;
+  align-items: center; /* Alinha o texto verticalmente */
+  background-color: white;
+}
+
+.text-content {
+  font-size: 45px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  display: inline-block; /* Mantém o texto em linha */
+  padding: 0 10px; /* Adiciona algum espaçamento extra ao redor do texto */
+}
+
+/*.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
