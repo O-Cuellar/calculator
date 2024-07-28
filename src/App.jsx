@@ -6,13 +6,11 @@
 
 import "./App.css";
 import Calculator from "./components/Calculator";
-import CalculatorScreen from "./components/CalculatorScreen";
 
 function App() {
   return (
     <>
       <div>
-        <CalculatorScreen />
         <Calculator />
       </div>
     </>
