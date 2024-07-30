@@ -4,16 +4,20 @@ import CalculatorButtons from "./CalculatorButtons";
 import CalculatorScreen from "./CalculatorScreen";
 
 const Calculator = () => {
-  //Seta o array de números que serão usados no calcúlo
+  //State de números individuais digitados pelo úsuario
   const [nums, setNums] = useState([]);
   console.log(nums);
+  //State de números concatenados para uso das operações
+  const [operationNum, setOperationNum] = useState([]);
   //Redefine o estado do array para vazio novamente, apagando todos os dados anteriores
   const ClearAll = () => {
     setNums([]);
   };
-  
+  //Uma constante concNums que transforma os itens individuais do array em uma uníca string de números
   const concNum = nums.join('');
-  console.log(concNum);
+  //
+  const handleOperationNum = () => {setOperationNum((prevOperationNum) => [prevOperationNum, concNum]);}
+  console.log(operationNum);
 
   return (
     <>
@@ -25,7 +29,8 @@ const Calculator = () => {
         <CalculatorButtons
         nums={nums}
         setNums={setNums}
-        ClearAll={ClearAll} />
+        ClearAll={ClearAll}
+        handleOperationNum={handleOperationNum} />
       </div>
     </>
   );
