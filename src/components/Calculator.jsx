@@ -11,13 +11,15 @@ const Calculator = () => {
   const ClearAll = () => {
     setNums([]);
   };
+  
+  const concNum = nums.join('');
+  console.log(concNum);
 
   return (
     <>
       <div className="calcScreen">
         <CalculatorScreen
-        nums={nums}
-        setNums={setNums} />
+        nums={nums} />
       </div>
       <div className="calcBody">
         <CalculatorButtons

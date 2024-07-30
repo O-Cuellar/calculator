@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CalculatorButtons.css";
 
-  const CalculatorButtons = ( { nums, setNums, ClearAll, ClearLastNum } ) => {
+  const CalculatorButtons = ( { nums, setNums, ClearAll } ) => {
     
     //Redefine o estado do array para o estado anterior ao ultimo número computado
     const ClearLastNum = () => {
@@ -12,7 +12,7 @@ import "./CalculatorButtons.css";
       <>
         <div>
           <button>%</button>
-          <button>C</button>
+          <button onClick={ClearLastNum}>C</button>
           <button onClick={ClearAll}>CE</button>
           <button onClick={ClearLastNum}>{"<<"}</button>
         </div>
@@ -53,7 +53,7 @@ import "./CalculatorButtons.css";
           <button>-</button>
         </div>
         <div>
-          <button onClick={() => setNums((prevNums) => [prevNums + "."])}>
+          <button onClick={() => setNums((prevNums) => [prevNums, "."])}>
             ,
           </button>
           <button onClick={() => setNums((prevNums) => [prevNums, 0])}>
