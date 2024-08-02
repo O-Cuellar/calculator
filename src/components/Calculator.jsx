@@ -16,8 +16,12 @@ const Calculator = () => {
   //Uma constante concNums que transforma os itens individuais do array em uma uníca string de números
   const concNum = nums.join('');
   //
-  const handleOperationNum = () => {setOperationNum((prevOperationNum) => [prevOperationNum, concNum]);}
-  console.log(operationNum);
+  const handleOperationNum = () => {setOperationNum(concNum)}
+  //uma função para a soma dos itens
+  const sum = () =>{
+    handleOperationNum;
+    
+  }
 
   return (
     <>
